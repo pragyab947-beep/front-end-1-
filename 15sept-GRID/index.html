@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            height: 800px;
+            border: 4px solid black;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            column-gap: 4px;
+            row-gap: 4px;
+            background-color: black;
+        }
+        .item{
+            font-weight: bolder;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        .three{
+            grid-row-start: 1;
+            grid-row-end:3;
+            /*grid-column-start:3;
+            grid-column-end: 4; can also be written as*/
+            grid-column: 3/4;
+        }
+        .four{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column: 1/3;
+
+        }
+        .five{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .six{
+            grid-column: 2/4;
+            grid-row: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <h1>GRID DEMO</h1>
+    <div class="cont">
+       <dev class="item">Item1</dev>
+       <dev class="item">Item2</dev>
+       <dev class="item three">Item3</dev>
+       <dev class="item four">Item4</dev>
+       <dev class="item five">Item5</dev>
+       <dev class="item six">Item6</dev>
+    </div>
+</body>
+</html>
